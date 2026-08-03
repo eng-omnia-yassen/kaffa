@@ -1,0 +1,472 @@
+/* navbar */
+nav{
+    z-index: 2;
+ }
+.navbar #navbarSupportedContent{
+    letter-spacing:2px ;
+}
+.navbar .navbar-nav{
+    column-gap: 20px;
+}
+.navbar #navbarSupportedContent .nav-link{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.navbar #navbarSupportedContent .nav-link::before,
+.navbar #navbarSupportedContent .nav-link span.shape,
+.navbar #navbarSupportedContent .nav-link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100%/3);
+    background-color: var(--bs-success);
+    position: absolute;
+    transition-duration: .5s;
+}
+.navbar #navbarSupportedContent .nav-link::before{
+    top: 0;
+    left: -100%;
+}
+.navbar #navbarSupportedContent .nav-link span.shape{
+    top: calc(100%/3);
+    right: -100%;
+}
+.navbar #navbarSupportedContent .nav-link::after{
+    bottom: 0;
+    left: -100%;
+}
+.navbar #navbarSupportedContent .nav-link:hover::before
+{
+    left: 0%;
+}
+.navbar #navbarSupportedContent .nav-link:hover span.shape
+{
+    right: 0%;
+}
+.navbar #navbarSupportedContent .nav-link:hover::after
+{
+    left: 0%;
+}
+
+/* carousel section  */
+
+#carouselExampleCaptions .carousel-indicators button{
+    width: 12px;
+    height: 12px;
+}
+#carouselExampleCaptions  .carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+}
+#carouselExampleCaptions  .carousel-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#carouselExampleCaptions  .carousel-item:nth-of-type(1){
+    background-image: url("../images/banner1.jpg");
+}
+#carouselExampleCaptions  .carousel-item:nth-of-type(2){
+    background-image: url("../images/banner2.jpg");
+}
+#carouselExampleCaptions  .carousel-item:nth-of-type(3){
+    background-image: url("../images/banner3.jpg");
+}
+#carouselExampleCaptions  .carousel-item:nth-of-type(4){
+    background-image: url("../images/banner4.jpg");
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption{
+    position: initial;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption>*{
+    transform: translateY(-30%);
+    opacity: 0;
+    transition-duration: 1s;
+
+}
+#carouselExampleCaptions  .carousel-item.active  .carousel-caption >*{
+    transform: translateY(0%);
+    opacity: 1;   
+}
+
+#carouselExampleCaptions  .carousel-item .carousel-caption p{
+    letter-spacing: 2px;
+    margin-block: 40px;
+    width: 75%;
+    transition-delay: .4s;
+    font-size: clamp(25px,4vw,40px);
+ } 
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons{
+    transition-delay: .6s;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a{
+    position: relative;
+    overflow: hidden;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a span.text{
+    transition-duration: .5s;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a:hover span{
+    color: var(--bs-light);
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a::before,
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-top:25px solid var(--bs-success) ;
+    border-left:25px solid var(--bs-success) ;
+    border-right:25px solid  var(--bs-success) ;
+    border-bottom:25px solid var(--bs-success) ;
+    transition-duration: .5s;
+
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a::before{
+    right: 100%;
+    top: 0;
+    border-right:20px solid transparent ;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a:hover::before{
+      right: 0%;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a::after{
+    left: 100%;
+    top: 0;
+    border-left:20px solid transparent ;
+}
+#carouselExampleCaptions  .carousel-item  .carousel-caption .buttons a:hover:after{
+    left: 0%;
+
+}
+
+/* about section */
+
+#about{
+    background-image: url("../images/leaves_pattern.png");
+    background-color: var(--bs-success);
+    background-position: center;
+}
+
+/* about part-1 */
+
+#about .part1 button{
+    overflow: hidden;
+}
+#about .part1 button span.text{
+    transition-duration: .5s;
+}
+#about .part1 button:hover span.text{
+    color: var(--bs-success);
+}
+#about .part1 button::before,
+#about .part1 button::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: var(--bs-light);
+    height: calc(100%/2);
+    position: absolute;
+    transition-duration:.5s ;
+}
+#about .part1 button::before{
+    top: -100%;
+    left: 0;;
+}
+#about .part1 button:hover:before{
+    top: 0%;
+}
+#about .part1 button::after{
+    bottom: -100%;
+    left: 0;
+}
+#about .part1 button:hover::after{
+    bottom: 0%;
+}
+
+/* about part-2 */
+
+#about .part2 .box .s-card{
+    position: relative ;
+}
+
+/* front face  */
+
+#about .part2 .box .s-card .front{
+    backface-visibility: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#about .part2 .box:nth-of-type(1) .s-card  .front{
+    background-image: url("../images/about_front_01.jpg");
+    
+}
+#about .part2 .box:nth-of-type(2) .s-card  .front{
+    background-image: url("../images/about_front_02.jpg");
+
+}
+#about .part2 .box:nth-of-type(3) .s-card  .front{
+    background-image: url("../images/about_front_03.jpg");
+}
+#about .part2 .box .s-card:hover  .front{
+    transform: rotateY(180deg)
+}
+
+/* back face */
+
+#about .part2 .box .back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+#about .part2 .box .s-card:hover .back{
+    transform: rotateY(0deg)
+}
+#about .part2 .box:nth-of-type(1) .back .body{
+    background-color: #404042;
+}
+#about .part2 .box:nth-of-type(2) .back .body{
+    background-color: #88764a;
+}
+#about .part2 .box:nth-of-type(3) .back .body{
+    background-color: #6e1f37;
+}
+#about .part2 .box .back .body button{
+    border: 1px solid var(--bs-light);
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: var(--bs-light);
+    background-color: transparent;
+    transition-duration: .5s;
+}
+#about .part2 .box:nth-of-type(1) .back .body button:hover{
+    color: #404042;
+    background-color: var(--bs-light);
+}
+#about .part2 .box:nth-of-type(2) .back .body button:hover{
+    color: #88764a;
+    background-color: var(--bs-light);
+}
+#about .part2 .box:nth-of-type(3) .back .body button:hover{
+    color: #6e1f37;
+    background-color: var(--bs-light);
+}
+#about .part2 .box .back .body button i{
+    transition-duration: .5s;
+}
+#about .part2 .box .back .body button:hover i{
+    margin-left: 5px;
+}
+/* services section */
+#services{
+    background-image: url("../images/services-beans_bg.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#services::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+}
+#services .container .content .part1 .item .caption p, 
+#services .container .content .part2 .item .caption p{
+    color: #afafaf;
+
+}
+#services .container .content  .image img{
+
+    animation-name: animate-1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+/* menu section */
+#menu {
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+}
+#menu .content nav .nav{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+    width:max-content;
+    margin: auto;
+}
+#menu .content nav .nav .nav-link{
+    color: #fff;
+
+}
+#menu .content nav .nav .nav-link.active{
+    color: var(--bs-success);
+}
+#menu .content .item .box{
+    position: relative;
+    /* height: 100%; */
+}
+#menu .content .item .box{
+    overflow: hidden;
+    background-color: #ffffff;
+ }
+#menu .content .item .box img{
+    transform: scale(.8);
+    transition-duration: 1s;
+}
+#menu .content .item .box:hover img{
+    transform: scale(1);
+}
+#menu .content .item .box h5,
+#menu .content .item .box p
+{
+    position: absolute;
+    background-color: var(--bs-success);
+    background-image: url("../images/leaves_pattern.png");
+    left: 0;
+    color: var(--bs-success);
+    color: var(--bs-light);
+    padding: 5px 10px;
+    border-radius:0px 10px 10px 0px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+    /* transition-delay: ; */
+}
+#menu .content .item .box h5{
+    top: 10px;
+    font-size: 16px;
+}
+#menu .content .item .box p{
+    bottom: 10px;
+}
+#menu .content .item .box:hover h5,
+#menu .content .item .box:hover p{
+    transform: translateX(0%);
+    
+}
+#menu .tab-pane .item{
+    transform: scale(0);
+    transition-duration: 1s;
+}
+#menu .tab-pane.active.show .item{
+    transform: scale(1);
+}
+/* beans section */
+#beans{
+    background-image: url("../images/Beans_ice_drinks_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 400px;
+}
+#beans::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0%;
+}
+#beans .content{
+    position: relative;
+}
+#beans .content h2{
+    text-shadow: 3px 3px 10px black;
+    font-size: clamp(25px,5vw,60px);
+}
+#beans .content h4{
+    font-size: clamp(25px,5vw,40px);
+}
+#beans .content i{
+    transition-duration: .5s;
+    font-size: clamp(60px,10vw,100px);
+}
+
+#beans .content i:hover{
+    color: var(--bs-success);
+}
+.modal .modal-dialog{
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: initial;
+    width: 100%;
+    height: 100%;
+}
+.modal .modal-dialog .modal-content{
+    width: 600px;
+}
+
+/* book section */
+#book{
+
+    background-image: url("../images/Book_black_bg.png");
+}
+#book .content .box1{
+    background-image: url("../images/Book_girl.png");
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+} 
+
+
+#book .content .box  {
+    background-image: url("../images/leaves_pattern.png");
+    background-color: var(--bs-success);
+}
+#book .content .box .item button{
+    position: relative;
+    transition-duration: .5s;
+    overflow: hidden;
+}
+ #book .content .box .item button:hover{
+    border: 1px solid #fff;
+}
+#book .content .box .item .group-form textarea{
+    resize: none;
+}
+#book .content .box .item button::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-success);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition-duration:.5s;
+}
+#book .content .box .item button:hover:before{
+    bottom: 0%;
+}
+
+/* footer */
+footer{
+    background-color: #212121;
+}

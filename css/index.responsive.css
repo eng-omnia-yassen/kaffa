@@ -1,0 +1,157 @@
+@media (max-width: 1300px) {
+    
+    .navbar .container .navbar-brand img{
+        width: 60%;
+    }
+    .navbar .navbar-toggler{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: initial;
+        width: 50px;
+        height: 40px;
+    }
+    /* we still not make the effect of button we make a check on the button */
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar .navbar-toggler span{
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: var(--bs-success);
+    }
+    .navbar .navbar-nav{
+        background-color: black;
+        border-radius: 5px;
+        /* margin-block:15px ; */
+        text-align: center;
+        column-gap: 0px;
+        row-gap: 5px;
+        padding: 15px 10px;
+    }
+    /*carousel responsive  */
+    #carouselExampleCaptions  .carousel-item .carousel-caption p{
+        width: 100%;
+        margin-block: 15px;
+    }  
+    /* about section responsive */
+    #about .container .part2 .box .s-card{
+        max-width: 280px;
+        margin: auto;
+    }
+    /* title responsive */
+    .title h2{
+        font-size: 25px;
+        font-weight:normal;
+    }
+    /* services section */
+    #services .container .content .image{
+        margin-block: 50px;
+    }
+    #services .container .content .image img{
+        width:100%;
+        margin: auto;
+        
+    }
+    /* menu section */    
+    #menu .container .item .box {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    /* beans section */
+    .modal .modal-dialog .modal-content{
+        width: 280px;
+    }
+    /* book section */
+    #book .content .container .box{
+        width: 85%;
+        margin: auto;
+        /* width: 300px; */
+    }
+    #book .content .box .item form {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    .navbar .container .navbar-brand img{
+        width: 80%;
+    }
+    #carouselExampleCaptions  .carousel-item .carousel-caption p{
+        width: 90%;
+    }
+    /* services section */
+    #services .container .content .image img{
+        width:65%;
+    }
+    /* menu section */
+    #menu .container .item .box {
+        width: 70%;
+    
+    }
+    /* beans section */
+    .modal .modal-dialog .modal-content{
+        width: 350px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    /* title responsive */
+    .title h2{
+        font-size: 30px;
+    }
+    /* services section */
+    #services .container .content .image img{
+        width: 60%;
+    }
+    #menu .container .item .box {
+        width: 100%;
+        margin: auto;
+    }
+    /* beans section */
+    .modal .modal-dialog .modal-content{
+        width: 450px;
+    }    
+    /* book section */
+    #book .content .container .box{
+        width: 5;
+        margin: 0 ;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+     /* services section */
+    #services .container .content .image img{
+        width: 50%;
+    }
+      /* beans section */
+    .modal .modal-dialog .modal-content{
+        width: 600px;
+    } 
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    .navbar .navbar-toggler{
+        display: none;
+    }
+    .navbar .navbar-nav{
+        background-color: transparent;
+    }
+    /* services section */
+    #services .container .content .image img{
+        width: 100%;
+        
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+
+}
