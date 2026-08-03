@@ -69,11 +69,8 @@
     #book .content .container .box{
         width: 85%;
         margin: auto;
-        /* width: 300px; */
     }
-    #book .content .box .item form {
-        width: 100%;
-    }
+  
 
 }
 
@@ -118,9 +115,14 @@
     }    
     /* book section */
     #book .content .container .box{
-        width: 5;
-        margin: 0 ;
+        width: 280px;
+        margin: 0;
     }
+    /* #book .content .box1{
+        width: 450px;
+    } */
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
