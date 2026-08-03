@@ -98,7 +98,7 @@ nav{
     margin-block: 40px;
     width: 75%;
     transition-delay: .4s;
-    /* font-size: clamp(); */
+    font-size: clamp(20px 5vw,60px);
  } 
 #carouselExampleCaptions  .carousel-item  .carousel-caption .buttons{
     transition-delay: .6s;
@@ -432,7 +432,6 @@ nav{
     background-position: left center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
 } 
 #book .content .box  {
     background-image: url("../images/leaves_pattern.png");
